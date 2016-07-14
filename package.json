@@ -4,7 +4,7 @@
   "description": "RSS reader built with React and Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
     "watch": "watchify app/app.js -t babelify -o public/js/bundle.js --debug --verbose"
   },
   "repository": {
@@ -14,7 +14,7 @@
   "keywords": [
     "Electron",
     "React",
-    "RSS",
+    "RSS"
   ],
   "author": "Gareth Nicholson",
   "license": "MIT",
@@ -30,6 +30,8 @@
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
     "classnames": "^2.2.5",
+    "electron-reload": "^1.0.0",
+    "pouchdb": "^5.4.5",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "superagent": "^2.0.0",
