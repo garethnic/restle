@@ -1,28 +1,38 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "restle",
+  "version": "0.0.1",
+  "description": "RSS reader built with React and Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
+    "watch": "watchify app/app.js -t babelify -o public/js/bundle.js --debug --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/garethnic/restle.git"
   },
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "React",
+    "RSS",
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Gareth Nicholson",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
+    "url": "https://github.com/garethnic/restle/issues"
   },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "homepage": "https://github.com/garethnic/restle#readme",
   "devDependencies": {
     "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "classnames": "^2.2.5",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "superagent": "^2.0.0",
+    "xml2js": "^0.4.17"
   }
 }
