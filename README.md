@@ -5,7 +5,7 @@ This will be my attempt at doing some more React work while trying to learn as m
 
 Open sourcing my learning experience might also lead to PR's or issues to things I'm not even aware of. 
 
-**Why create another RSS reader**
+**Why create another RSS reader?**
 
 I tend to go through quite a few tech sites during the day and having a central point of browsing the articles just seems a bit more logical.
 
