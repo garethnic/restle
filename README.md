@@ -11,6 +11,8 @@ I tend to go through quite a few tech sites during the day and having a central 
 
 There are various RSS readers out already, but I'm a developer so why not make my own.
 
+**PS - Pull requests are welcome**
+
 ####UPDATE
 
 *18-07-2016*
