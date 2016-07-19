@@ -37,7 +37,6 @@ class AppContainer extends React.Component {
                }
 
                if (res.status === 200) {
-                   alert('Valid feed URL');
                    let feedData = XML.parse(res.text);
                    let feedTitle = feedData.channel.title;
 
@@ -48,7 +47,6 @@ class AppContainer extends React.Component {
                    }
 
                    _this.setState({ feedData: feedData });
-
                    //db.put(doc);
                }
             });
