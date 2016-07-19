@@ -1,16 +1,37 @@
+//Libraries
 import React from 'react';
-import XML from 'pixl-xml';
 
 class Item extends React.Component {
-    componentWillReceiveProps (feedData) {
+    constructor (props) {
+        super(props);
 
+        this.state = {
+            feed: null
+        }
+    }
+
+    componentWillReceiveProps (feedData) {
+        this.setState({ feed: feedData });
     }
 
     render () {
+        let item = '';
+
+        if (this.state.feed) {
+            let items = this.state.feed;
+            if (items.feedData.channel) {
+                item = items.feedData.channel.item.map((item, index) => {
+                   return  <li className="list-group-item" key={index}><div className="media-body">{item.title}</div></li>
+                });
+            } else {
+                return <div></div>
+            }
+        }
+
         return (
-            <div>
-                'item'
-            </div>
+            <ul className="list-group">
+                {item}
+            </ul>
         );
     }
 }
