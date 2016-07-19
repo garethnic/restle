@@ -17,6 +17,8 @@ There are various RSS readers out already, but I'm a developer so why not make m
 
 *19-07-2016*
 
+![screenshot](https://github.com/garethnic/restle/tree/master/public/screenshots/2016-07-19.png "19-07-2016")
+
 The app can now successfully pull the `arstechnica` rss feed and populate the content window. Now all we need to is find a way to handle multiple feeds and all their formats.
 
 TODO
