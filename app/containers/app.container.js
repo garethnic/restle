@@ -1,7 +1,6 @@
 //Libraries
 import slug from 'slug';
 import React from 'react';
-import XML from 'pixl-xml';
 import PouchDB from 'pouchdb';
 import parser from 'rss-parser';
 import request from 'superagent';
