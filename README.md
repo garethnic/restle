@@ -15,6 +15,21 @@ There are various RSS readers out already, but I'm a developer so why not make m
 
 ####UPDATE
 
+*19-07-2016*
+
+The app can now successfully pull the `arstechnica` rss feed and populate the content window. Now all we need to is find a way to handle multiple feeds and all their formats.
+
+TODO
+
+- [ ] Find solution to handle different rss feeds
+- [ ] Clean up prototype code where possible
+- [ ] Display more relevant data for each article
+- [ ] Allow articles to be viewed inside app
+- [ ] Store feed urls in the database and check for duplicates
+- [ ] Display feeds as buttons to initiate ajax calls
+- [ ] Possibly add offline feature
+- [ ] Add some styling to the app
+
 *18-07-2016*
 
 Foundation of the components have been added. App renders all components correctly. Data is also being pulled correctly, xml feed's transformed to json.
