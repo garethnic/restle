@@ -18,9 +18,10 @@ class Item extends React.Component {
         let item = '';
 
         if (this.state.feed) {
-            let items = this.state.feed;
-            if (items.feedData.channel) {
-                item = items.feedData.channel.item.map((item, index) => {
+            let items = this.state.feed.feedData;
+            console.log(items.entries);
+            if (items.entries.length > 0) {
+                item = items.entries.map((item, index) => {
                    return  <li className="list-group-item" key={index}><div className="media-body">{item.title}</div></li>
                 });
             } else {
