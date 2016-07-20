@@ -1,6 +1,6 @@
 {
   "name": "restle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "RSS reader built with React and Electron",
   "main": "main.js",
   "scripts": {
@@ -30,12 +30,11 @@
     "classnames": "^2.2.5",
     "electron-notify": "^0.1.0",
     "electron-reload": "^1.0.0",
-    "pixl-xml": "^1.0.7",
     "pouchdb": "^5.4.5",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
+    "rss-parser": "^2.5.1",
     "slug": "^0.9.1",
     "superagent": "^2.0.0",
-    "xml2js": "^0.4.17"
   }
 }

@@ -1,8 +1,8 @@
 //Libraries
 import slug from 'slug';
 import React from 'react';
-import XML from 'pixl-xml';
 import PouchDB from 'pouchdb';
+import parser from 'rss-parser';
 import request from 'superagent';
 
 //Components
@@ -29,27 +29,22 @@ class AppContainer extends React.Component {
         let feed = this.state.feed;
         let _this = this;
 
-        request
-            .get(this.state.feed)
-            .end(function (err, res) {
-               if (err) {
-                   alert('Invalid feed URL!');
-               }
+        parser.parseURL(feed, (err, parsed) => {
+            if (!err) {
+                _this.setState({ feedData: parsed.feed });
 
-               if (res.status === 200) {
-                   let feedData = XML.parse(res.text);
-                   let feedTitle = feedData.channel.title;
+                let feedTitle = parsed.feed.title;
+                /*let doc = {
+                    '_id': Math.floor((Math.random() * 100) + 1).toString() + slug(feedTitle),
+                    'title': feedTitle,
+                    'feed': feed
+                }
 
-                   let doc = {
-                       '_id': Math.floor((Math.random() * 100) + 1).toString() + slug(feedTitle),
-                       'title': feedTitle,
-                       'feed': feed
-                   }
-
-                   _this.setState({ feedData: feedData });
-                   //db.put(doc);
-               }
-            });
+                db.put(doc);*/
+            } else {
+                console.log('whoops');
+            }
+        });
     }
 
     handleChange (e) {
