@@ -23,7 +23,8 @@ The app can now successfully pull the `arstechnica` rss feed and populate the co
 
 TODO
 
-- [ ] Find solution to handle different rss feeds
+- [x] Find solution to handle different rss feeds
+- [ ] Feed validation
 - [ ] Clean up prototype code where possible
 - [ ] Display more relevant data for each article
 - [ ] Allow articles to be viewed inside app
